@@ -1,0 +1,3 @@
+timestamp,type,class,payload
+1709474541636,ACTION,composed-request-to-conveyor-speed,Medium
+1709474587688,ACTION,composed-to-dept-stop-request,true
