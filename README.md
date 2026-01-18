@@ -1,8 +1,6 @@
-# Fischertechnik Multiprocess Department-Conveyor Health Model
+# Fischertechnik Multiprocess Department-Conveyor Health Model Experiment
 
-# Cognitive DT experiment settings
-
-## Experiments datasets: 
+## Experimental datasets: 
 - The dataset selected for the experiment is the [NASA Bearing Dataset (Kaggle)](https://www.kaggle.com/datasets/vinayak123tyagi/bearing-dataset?select=3rd_test).
 - The selected dataset is the _Set No. 2_ (see the dataset repository for further details).
 
@@ -19,12 +17,15 @@ Each machine is controlled by a 24V Industrial Soft-PLC
 remote server. The server collects the data and hosts one Digital Twin (DT) for each machine, thus 
 obtaining an Oven DT, a Vacuum Gripper Carrier DT, and so on. A higher level composed DT has always
 been implemented, fed by machine-level DTs, thus gaining observability capabilities about the whole 
-department state.The Cyber-Physical System (CPS) resulting from the collaboration between the 
-physical Conveyor and its DT is the object of the experiment.
+department state. The resulting DT hierarchy has the ability of observing the whole industrial 
+system and eventually push actions towards it to reach a desired state<sup>[1]</sup>. The 
+Cyber-Physical System (CPS) resulting from the collaboration between the physical Conveyor and its 
+DT is the object of the experiment. DTs have been built using the 
+[White Label Digital Twin (WLDT)](https://wldt.github.io/) library.
 
 Based on the selected dataset ,an Autoencoder health state classification model has been built and 
 embedded in the Conveyor DT, thus augmenting the computation capabilities and intelligence level of 
-the physical Conveyor *PUT CIT. Then, each data point of the collected dataset has been streamed 
+the physical Conveyor<sup>[2]</sup>. Then, each data point of the collected dataset has been streamed 
 from a dummy Physical Adapter towards the Conveyor DT simulating the streaming of data coming from 
 the physical domain. The streaming of data and the Conveyor operations were started synchronously. 
 As a result, from the Conveyor DT view point, received vibrational data belonged to the physical 
@@ -33,15 +34,16 @@ Conveyor.
 When the embedded model detects a degradation in the Conveyor bearings health state, it can react in 
 different ways, such as sending a simple notification or building up a more structured reaction 
 strategy. For the experiment purpose, a reaction strategy involving the whole department has been 
-implemented.
+implemented. The final result has been published in <sup>[3]</sup>. 
 
 ---
 
 ## Dataset key information
 - The Kaggle dataset tracks 4 bearings vibration data
 - Each data point is gathered every 10 minutes
-- Total entries are 982 (EVALUATE TO CHANGE TO 984)
-- Assuming that each entry is triggered every second, an experiment can run for (982 s)/(60 s/min) = 16,37 min
+- Total entries are 984
+- Assuming that each entry is triggered every second, an experiment can run for 
+(982 s)/(60 s/min) = 16,4 min
 - Given the model, the MAE is calculated for every point with respect to the actual prevision 
 - If the MAE exceeds a certain threshold, a bearing can be considered broken. 
 
@@ -64,9 +66,6 @@ light-barrier;
 - Department DT: 
   - Interaction file that contains generated events and received actions requests
 
-### DUBBI DA CHIARIRE: 
-- ma io lo uso il modello in queto progetto? Se no, cancellalo
-
 ---
 
 # Experiment result
@@ -84,4 +83,22 @@ the department (4);
 - When the last work piece leaves the Conveyor, a notification is sent to the Department DT (5);
 - A stop request is sent by the Department DT to all the machines (6) stopping the whole department.
 
+---
 
+<sup>
+  [1] M. Martinelli, J. Zhang, A.-K. Splettstoßer, M. Picone, M. Lippi, and A. Wortmann, 
+  “Hierarchical Digital Twin Ecosystem for Industrial Manufacturing Scenarios,” 2024 50th Euromicro 
+  Conference on Software Engineering and Advanced Applications (SEAA). IEEE, pp. 56–63, Aug. 28, 
+  2024. doi: 10.1109/seaa64295.2024.00018.
+</sup>
+<br>
+<sup>
+  [2] R. Minerva, G. M. Lee, and N. Crespi, “Digital Twin in the IoT Context: A Survey on 
+  Technical Features, Scenarios, and Architectural Models,” Proc. IEEE, vol. 108, no. 10, 
+  pp. 1785–1824, Oct. 2020, doi: 10.1109/jproc.2020.2998530.
+</sup>
+<br>
+<sup>
+  [3] M. Martinelli, “Smart Digital Twins nell’Industria 4.0,” Università di Modena e Reggio Emilia, 
+  2024. Accessed: Jul. 23, 2025. [Online]. Available: https://hdl.handle.net/11380/1339389
+</sup>
