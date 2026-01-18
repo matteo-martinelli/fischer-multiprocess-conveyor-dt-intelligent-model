@@ -15,7 +15,7 @@ CONVEYOR_INTERACTIONS_DATASET_PATH = 'source/data/conveyor-dt/conveyor-logger-in
 CONVEYOR_PROPERTIES_DATASET_PATH = 'source/data/conveyor-dt/conveyor-logger-properties.csv'
 CONVEYOR_VIBRATIONS_DATASET_PATH = 'source/data/conveyor-dt/conveyor-logger-vibrations.csv'
 SAVING_PATH = 'output/graph/'
-SAVE_LAST_GENERATED_IMAGE = True
+SAVE_LAST_GENERATED_IMAGE = False
 SHOW_GRAPH = False
 
 pandas.options.mode.copy_on_write = True
