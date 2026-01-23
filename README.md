@@ -1,10 +1,11 @@
 # Fischertechnik Multiprocess Department-Conveyor Health Model Experiment
 
-## Experimental datasets: 
+## Experimental datasets
+
 - The dataset selected for the experiment is the [NASA Bearing Dataset (Kaggle)](https://www.kaggle.com/datasets/vinayak123tyagi/bearing-dataset?select=3rd_test).
 - The selected dataset is the _Set No. 2_ (see the dataset repository for further details).
 
-## Experiment Scenario
+## Experiment scenario
 
 The experimental scenario is the 
 [Fischertechnik Multiprocess Station with Oven](https://www.fischertechnik.de/en/products/industry-and-universities/training-models/536632-multi-working-station-with-furnace-24v). 
@@ -47,7 +48,7 @@ implemented. The final result has been published in <sup>[3]</sup>.
 - Given the model, the MAE is calculated for every point with respect to the actual prevision 
 - If the MAE exceeds a certain threshold, a bearing can be considered broken. 
 
-## Experiment setup: 
+## Experiment setup
 - Running tim from 10 to 20 min; 
 - The Conveyor has been set to run continuously, stopping only when a piece reaches its 
 light-barrier; 
