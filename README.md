@@ -2,7 +2,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![TensorFlow 2.12](https://img.shields.io/badge/TensorFlow-2.12-FF6F00.svg)](https://tensorflow.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Official Experiment Repository](https://img.shields.io/badge/Official_Experiment-Repository-107C41.svg?style=flat&logo=github)](https://github.com/your-username/fischer-multiprocess-conveyor-dt-intelligent-model-main)
 
 An end-to-end experimental framework and log processing tool for **Cognitive Digital Twin (cDT)** architectures in smart manufacturing environments.
 
