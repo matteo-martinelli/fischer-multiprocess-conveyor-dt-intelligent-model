@@ -120,6 +120,8 @@ python main.py
 
 ## 📚 Publications & References
 
-1. M. Martinelli, J. Zhang, A.-K. Splettstoßer, M. Picone, M. Lippi, and A. Wortmann, *"Hierarchical Digital Twin Ecosystem for Industrial Manufacturing Scenarios,"* 2024 50th Euromicro Conference on Software Engineering and Advanced Applications (SEAA), IEEE, 2024, pp. 56–63. [DOI: 10.1109/seaa64295.2024.00018](https://www.google.com/search?q=https://doi.org/10.1109/seaa64295.2024.00018)
-2. R. Minerva, G. M. Lee, and N. Crespi, *"Digital Twin in the IoT Context: A Survey on Technical Features, Scenarios, and Architectural Models,"* Proc. IEEE, vol. 108, no. 10, pp. 1785–1824, 2020.
-3. M. Martinelli, *"Smart Digital Twins nell’Industria 4.0,"* Ph.D. Dissertation, Università di Modena e Reggio Emilia, 2024. [Online Access](https://www.google.com/search?q=https://hdl.handle.net/11380/1339389)
+This repository contains materials, code, and findings that were utilized as part of the Ph.D. dissertation:
+
+* **M. Martinelli**, *"Smart Digital Twins in Industry 4.0,"* Ph.D. Dissertation, Department of Sciences and Methods for Engineering, University of Modena and Reggio Emilia, 2024.  
+  👉 **[Read the Ph.D. Thesis](https://hdl.handle.net/20.500.14242/103358)**
+
