@@ -118,10 +118,24 @@ python main.py
 
 ---
 
-## 📚 Publications & References
+## ✒️ Citation / Acknowledgments
 
-This repository contains materials, code, and findings that were utilized as part of the Ph.D. dissertation:
+This repository contains materials, code, and findings that were utilized as part of the Ph.D. dissertation *"Smart Digital Twins in Industry 4.0"*.
 
-* **M. Martinelli**, *"Smart Digital Twins in Industry 4.0,"* Ph.D. Dissertation, Department of Sciences and Methods for Engineering, University of Modena and Reggio Emilia, 2024.  
-  👉 **[Read the Ph.D. Thesis](https://hdl.handle.net/20.500.14242/103358)**
 
+👉 Click the following link to **[read the Ph.D. Thesis](https://hdl.handle.net/20.500.14242/103358)**.
+
+If you use this code or Digital Twin framework in your research, please cite this repository or the associated Ph.D. dissertation as follows:
+
+```bibtex
+@phdthesis{citekey,
+  author       = {Matteo Martinelli},
+  title        = {Smart Digital Twins nell'Industria 4.0},
+  school       = {University of Modena and Reggio Emilia},
+  year         = {2024},
+  type         = {Ph.D. Dissertation},
+  month   = "May",
+  note    = "Available at \url{https://example.com/thesis.pdf}"
+}
+
+```
