@@ -128,7 +128,7 @@ This repository contains materials, code, and findings that were utilized as par
 If you use this code or Digital Twin framework in your research, please cite this repository or the associated Ph.D. dissertation as follows:
 
 ```bibtex
-@phdthesis{citekey,
+@phdthesis{martinelli2024-smart-dt,
   author       = {Matteo Martinelli},
   title        = {Smart Digital Twins nell'Industria 4.0},
   school       = {University of Modena and Reggio Emilia},
